@@ -1,0 +1,280 @@
+body {
+    background-color:rgb(246, 237, 237);
+  color: #333;
+  text-align: center;
+}
+
+header{
+   position: fixed;  
+            top: 0;
+            left: -1;
+            width: 100%;      
+            background-color: rgb(246, 237, 237);
+            padding: 10px 40px;   
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000; 
+            height: 80px; 
+            box-sizing: border-box;
+}
+  header img {
+  width: 100px;
+  height: auto;
+  
+}
+.logo {
+  display:flex;
+  align-items: center; 
+  padding: 0;       
+  margin: 0;         
+}
+
+.logo img {
+  width: 100px;
+  height:auto;
+  border-radius: 70px;
+  margin-left: -50px;     
+}
+
+
+/* ---- Navigation ---- */
+nav {
+  margin-top: 20px;
+}
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+}
+nav a:hover {
+  color: #007BFF;
+}
+
+/* ---- Welcome Section ---- */
+.welcome {
+  margin-top: 80px;
+  padding: 30px;
+}
+
+.welcome h1 {
+  font-size: 32px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.welcome p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+/* Grille produits */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 50px;
+    }
+
+    .product-1 {
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .product-1 img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .product-1 p {
+      margin: 8px 0;
+    }
+
+    .product-1 button {
+      background: black;
+      color: white;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .product button:hover {
+      background: #444;
+    }
+main {
+      margin-top: 100px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content:center; 
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .product {
+      width: 150px;             
+      background: white;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .product button {
+      margin-top: 5px;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #d63384;
+      color: white;
+      cursor: pointer;
+    }
+
+    .product button:hover {
+      background-color: #b82c6f;
+    }
+
+.footer {
+      background: rgb(246, 237, 237);
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+      border-top: 1px solid #e7e7e7;
+    }
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000; 
+}
+.video-container h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 14px;
+} 
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} 
+
+.profile-card {
+  width: 280px;                  
+  margin: 50px auto;            
+  padding: 20px;
+  background: white;            
+  border-radius: 15px;           
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.profile-img {
+  width: 120px;                
+  height: 120px;
+  object-fit: cover;             
+  border-radius: 50%;          
+  border: 3px solid  rgb(246, 237, 237);      
+  margin-bottom: 15px;
+}
+
+.profile-card h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.about-us p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #090404;
+  margin-bottom: 20px;
+  border: #0d0808;
+}
+.about-header {
+  background-color: rgb(246, 237, 237);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+} 
+.about-header h1 {
+  margin: 0px;
+  font-size: 30px;
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+
+}
+.welcome-enquiry {
+  background-color: rgb(246, 237, 237);
+  padding: 70px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.welcome-enquiry h1 {
+  margin: 20px;
+  font-size: 30px;
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+}
+    .form {
+      max-width: 400px;
+      margin:20px auto;
+      text-align: left;
+    }
+    .container {
+  width: 90%;   /* au lieu de width: 1200px; */
+  max-width: 1200px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/*  768px (tablet or phone) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+}
+
+/* For the small phone */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 18px;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
